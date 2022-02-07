@@ -2,11 +2,14 @@ import React from 'react';
 import './App.css';
 import HomePage from '../src/components/pages/homepage/homepage.component';
 import ShopPage from '../src/components/pages/shopPage/shop.component'
+import Header from './components/header/header.component'
 import { Route, Switch } from 'react-router-dom';
+
 
 function App() {
   return (
     <div>
+      <Header></Header>
       <Switch>
         {/* <button onClick={() => props.history.push('/topics')}>Click me</button> */}
         {/* <Link to='/topics'>Topics</Link> */}
