@@ -1,15 +1,8 @@
 import React from 'react';
 import './App.css';
 import HomePage from '../src/components/pages/homepage/homepage.component';
+import ShopPage from '../src/components/pages/shopPage/shop.component'
 import { Route, Switch } from 'react-router-dom';
-
-const HatsPage = () => {
-  return (
-    <div>
-      <h1>Hats Page</h1>
-    </div>
-  );
-};
 
 function App() {
   return (
@@ -18,7 +11,7 @@ function App() {
         {/* <button onClick={() => props.history.push('/topics')}>Click me</button> */}
         {/* <Link to='/topics'>Topics</Link> */}
         <Route exact path="/" component={HomePage}></Route>
-        <Route exact path="/hats" component={HatsPage}></Route>
+        <Route exact path="/shop" component={ShopPage}></Route>
       </Switch>
     </div>
   );
